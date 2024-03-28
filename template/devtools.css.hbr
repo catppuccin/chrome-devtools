@@ -1,0 +1,82 @@
+---
+accent: "{{mauve}}"
+---
+:root {
+  --sys-color-base: #{{base}} !important;
+  --sys-color-base-container: #{{mantle}} !important;
+  --sys-color-neutral-container: #{{surface0}} !important;
+  --sys-color-tonal-container: #{{mix accent base 0.3}} !important;
+  --sys-color-surface: #{{surface0}} !important;
+  --sys-color-surface1: #{{surface1}} !important;
+  --sys-color-surface2: #{{surface1}} !important;
+  --sys-color-surface-variant: #{{surface1}} !important;
+  --sys-color-surface-error: #{{mix red base 0.2}} !important;
+
+  --sys-color-divider: #{{overlay0}} !important;
+  --sys-color-neutral-outline: #{{overlay0}} !important;
+  --sys-color-neutral-bright: #{{subtext0}} !important;
+  --sys-color-tonal-outline: #{{accent}} !important;
+
+  --sys-color-on-surface: #{{text}} !important;
+  --sys-color-on-tonal-container: #{{text}} !important;
+  --sys-color-on-surface-subtle: #{{subtext0}} !important;
+  --sys-color-token-subtle: #{{subtext0}} !important;
+
+  --sys-color-primary: #{{accent}} !important;
+  --sys-color-primary-bright: #{{accent}} !important;
+  --sys-color-on-primary: #{{base}} !important;
+
+  --sys-color-token-tag: #{{blue}} !important;
+  --sys-color-token-attribute: #{{sapphire}} !important;
+  --sys-color-token-attribute-value: #{{peach}} !important;
+  --sys-color-token-property-special: #{{sky}} !important;
+  --sys-color-token-variable: #{{text}} !important;
+  --sys-color-token-property: #{{lavender}} !important;
+  --sys-color-token-string: #{{green}} !important;
+  --sys-color-token-string-special: #{{green}} !important;
+  --sys-color-token-number: #{{peach}} !important;
+  --sys-color-token-keyword: #{{mauve}} !important;
+
+  --sys-color-property-special: #{{sky}} !important;
+
+  --sys-color-state-disabled: #{{overlay0}} !important;
+  --sys-color-state-focus-ring: #{{accent}} !important;
+  --sys-color-state-hover-on-subtle: #{{mix accent base 0.2}} !important;
+  --sys-color-state-ripple-neutral-on-subtle: #{{mix accent base 0.3}} !important;
+  --sys-color-state-hover-on-prominent: #{{mix accent base 0.2}} !important;
+  --sys-color-state-ripple-neutral-on-prominent: #{{mix accent base 0.3}} !important;
+
+  --sys-color-on-error-container: #{{text}} !important;
+  --sys-color-error-bright: #{{red}} !important;
+
+  --sys-color-surface-yellow: #{{mix yellow base 0.2}} !important;
+  --sys-color-surface-yellow-high: #{{mix yellow base 0.3}} !important;
+  --sys-color-on-surface-yellow: #{{text}} !important;
+
+  --sys-color-orange: #{{peach}} !important;
+  --sys-color-orange-bright: #{{peach}} !important;
+  --sys-color-green: #{{green}} !important;
+  --sys-color-green-bright: #{{green}} !important;
+  --sys-color-purple: #{{mauve}} !important;
+  --sys-color-purple-bright: #{{mauve}} !important;
+
+  --lighthouse-red: #{{red}} !important;
+  --lighthouse-yellow: #{{yellow}} !important;
+  --lighthouse-green: #{{green}} !important;
+
+  --issue-color-red: #{{red}} !important;
+  --issue-color-yellow: #{{yellow}} !important;
+  --issue-color-blue: #{{blue}} !important;
+}
+
+.event-listener-button {
+  background-color: #{{surface0}} !important;
+}
+
+.lighthouse-progress-bar.errored {
+  background: #{{red}} !important;
+}
+
+#record-button {
+  color: #{{red}} !important;
+}
