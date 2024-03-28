@@ -1,11 +1,12 @@
-rm -r generated
-mkdir generated
+tc() { set ${*,,} ; echo ${*^} ; }
+rm -r themes
+mkdir themes
 for flavor in "latte" "frappe" "macchiato" "mocha"; do
   for accent in "rosewater" "flamingo" "pink" "mauve" "red" "maroon" "peach" "yellow" "green" "teal" "sky" "sapphire" "blue" "lavender"; do
     echo generating: $flavor $accent
-    mkdir generated/${flavor}_${accent}
-    sed "s/accent:.*/accent: \"$accent\"/" template/manifest.json.hbr | whiskers - $flavor -o generated/${flavor}_${accent}/manifest.json
-    sed "s/accent:.*/accent: \"{{$accent}}\"/" template/devtools.css.hbr | whiskers - $flavor -o generated/${flavor}_${accent}/devtools.css
-    cp template/devtools.html template/devtools.js generated/${flavor}_${accent}
+    mkdir themes/${flavor}_${accent}
+    whiskers template/manifest.json.hbr $flavor -o themes/${flavor}_${accent}/manifest.json --override "accent=$(tc $accent)"
+    whiskers template/devtools.css.hbr $flavor -o themes/${flavor}_${accent}/devtools.css --override "accent=$accent"
+    cp template/devtools.html template/devtools.js themes/${flavor}_${accent}
   done
 done

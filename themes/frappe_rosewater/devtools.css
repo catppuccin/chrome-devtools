@@ -1,0 +1,79 @@
+:root {
+  --sys-color-base: #303446 !important;
+  --sys-color-base-container: #292c3c !important;
+  --sys-color-neutral-container: #414559 !important;
+  --sys-color-tonal-container: #6c6670 !important;
+  --sys-color-surface: #414559 !important;
+  --sys-color-surface1: #51576d !important;
+  --sys-color-surface2: #51576d !important;
+  --sys-color-surface-variant: #51576d !important;
+  --sys-color-surface-error: #544452 !important;
+
+  --sys-color-divider: #737994 !important;
+  --sys-color-neutral-outline: #737994 !important;
+  --sys-color-neutral-bright: #a5adce !important;
+  --sys-color-tonal-outline: #f2d5cf !important;
+
+  --sys-color-on-surface: #c6d0f5 !important;
+  --sys-color-on-tonal-container: #c6d0f5 !important;
+  --sys-color-on-surface-subtle: #a5adce !important;
+  --sys-color-token-subtle: #a5adce !important;
+
+  --sys-color-primary: #f2d5cf !important;
+  --sys-color-primary-bright: #f2d5cf !important;
+  --sys-color-on-primary: #303446 !important;
+
+  --sys-color-token-tag: #8caaee !important;
+  --sys-color-token-attribute: #85c1dc !important;
+  --sys-color-token-attribute-value: #ef9f76 !important;
+  --sys-color-token-property-special: #99d1db !important;
+  --sys-color-token-variable: #c6d0f5 !important;
+  --sys-color-token-property: #babbf1 !important;
+  --sys-color-token-string: #a6d189 !important;
+  --sys-color-token-string-special: #a6d189 !important;
+  --sys-color-token-number: #ef9f76 !important;
+  --sys-color-token-keyword: #ca9ee6 !important;
+
+  --sys-color-property-special: #99d1db !important;
+
+  --sys-color-state-disabled: #737994 !important;
+  --sys-color-state-focus-ring: #f2d5cf !important;
+  --sys-color-state-hover-on-subtle: #575662 !important;
+  --sys-color-state-ripple-neutral-on-subtle: #6c6670 !important;
+  --sys-color-state-hover-on-prominent: #575662 !important;
+  --sys-color-state-ripple-neutral-on-prominent: #6c6670 !important;
+
+  --sys-color-on-error-container: #c6d0f5 !important;
+  --sys-color-error-bright: #e78284 !important;
+
+  --sys-color-surface-yellow: #555256 !important;
+  --sys-color-surface-yellow-high: #67615d !important;
+  --sys-color-on-surface-yellow: #c6d0f5 !important;
+
+  --sys-color-orange: #ef9f76 !important;
+  --sys-color-orange-bright: #ef9f76 !important;
+  --sys-color-green: #a6d189 !important;
+  --sys-color-green-bright: #a6d189 !important;
+  --sys-color-purple: #ca9ee6 !important;
+  --sys-color-purple-bright: #ca9ee6 !important;
+
+  --lighthouse-red: #e78284 !important;
+  --lighthouse-yellow: #e5c890 !important;
+  --lighthouse-green: #a6d189 !important;
+
+  --issue-color-red: #e78284 !important;
+  --issue-color-yellow: #e5c890 !important;
+  --issue-color-blue: #8caaee !important;
+}
+
+.event-listener-button {
+  background-color: #414559 !important;
+}
+
+.lighthouse-progress-bar.errored {
+  background: #e78284 !important;
+}
+
+#record-button {
+  color: #e78284 !important;
+}
