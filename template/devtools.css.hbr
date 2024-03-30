@@ -1,5 +1,18 @@
 ---
 accent: "{{mauve}}"
+overrides:
+  latte:
+    filter-arrow: "invert(97%) sepia(2%) saturate(526%) hue-rotate(184deg) brightness(94%) contrast(99%)"
+    filter-report-icon: "invert(29%) sepia(6%) saturate(2713%) hue-rotate(196deg) brightness(87%) contrast(76%)"
+  frappe:
+    filter-arrow: "invert(11%) sepia(5%) saturate(5076%) hue-rotate(194deg) brightness(93%) contrast(83%)"
+    filter-report-icon: "invert(84%) sepia(5%) saturate(1630%) hue-rotate(193deg) brightness(99%) contrast(94%)"
+  macchiato:
+    filter-arrow: "invert(10%) sepia(46%) saturate(439%) hue-rotate(194deg) brightness(100%) contrast(94%)"
+    filter-report-icon: "invert(77%) sepia(4%) saturate(1976%) hue-rotate(193deg) brightness(111%) contrast(92%)"
+  mocha:
+    filter-arrow: "invert(7%) sepia(7%) saturate(3407%) hue-rotate(201deg) brightness(101%) contrast(94%)"
+    filter-report-icon: "invert(78%) sepia(32%) saturate(181%) hue-rotate(190deg) brightness(105%) contrast(91%)"
 ---
 :root {
   --sys-color-base: #{{base}} !important;
@@ -26,6 +39,8 @@ accent: "{{mauve}}"
   --sys-color-primary-bright: #{{accent}} !important;
   --sys-color-on-primary: #{{base}} !important;
 
+  --sys-color-tertiary: #{{green}} !important;
+
   --sys-color-token-tag: #{{blue}} !important;
   --sys-color-token-attribute: #{{sapphire}} !important;
   --sys-color-token-attribute-value: #{{peach}} !important;
@@ -36,6 +51,9 @@ accent: "{{mauve}}"
   --sys-color-token-string-special: #{{green}} !important;
   --sys-color-token-number: #{{peach}} !important;
   --sys-color-token-keyword: #{{mauve}} !important;
+  --sys-color-token-meta: #{{overlay1}} !important;
+  --sys-color-token-comment: #{{overlay2}} !important;
+  --sys-color-token-declaration: #{{text}} !important;
 
   --sys-color-property-special: #{{sky}} !important;
 
@@ -67,6 +85,82 @@ accent: "{{mauve}}"
   --issue-color-red: #{{red}} !important;
   --issue-color-yellow: #{{yellow}} !important;
   --issue-color-blue: #{{blue}} !important;
+
+  --drop-shadow: 0 0 0 0 #fff;
+  --drop-shadow-depth-1: 0 0 0 0 #fff;
+  --drop-shadow-depth-2: 0 0 0 0 #fff;
+  --drop-shadow-depth-3: 0 0 0 0 #fff;
+  --drop-shadow-depth-4: 0 0 0 0 #fff;
+  --drop-shadow-depth-5: 0 0 0 0 #fff;
+
+  --color-background-elevation-dark-only: #{{surface0}};
+
+  .lh-root {
+    --report-background-color: #{{base}};
+    --report-text-color: #{{text}};
+    --report-text-color-secondary: #{{subtext0}};
+
+    --link-color: #{{accent}};
+    --snippet-color: #{{sky}};
+
+    --color-fail: #{{red}};
+    --color-fail-secondary: #{{red}};
+    --color-average: #{{yellow}};
+    --color-average-secondary: #{{yellow}};
+    --color-pass: #{{green}};
+    --color-pass-secondary: #{{green}};
+    --color-gray-700: #{{subtext0}};
+    --color-gray-600: #{{overlay2}};
+    --color-gray-500: #{{overlay0}};
+    --color-gray-200: #{{surface0}};
+    --color-blue-primary: #{{accent}};
+    --color-white: #{{base}};
+
+    --topbar-background-color: #{{mantle}};
+
+    --toplevel-warning-background-color: #{{mix yellow base 0.3}};
+    --toplevel-warning-message-text-color: #{{text}};
+    --toplevel-warning-text-color: #{{text}};
+
+    --env-item-background-color: #{{surface0}};
+
+    --table-group-header-background-color: #{{surface0}};
+
+    --pwa-installable-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23{{surface0}}" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%23{{text}}"/></g></svg>');
+    --pwa-optimized-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23{{surface0}}" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%23{{text}}"/></g></svg>');
+
+    .lighthouse-help-text {
+      color: #{{red}} !important;
+    }
+
+    .lh-tools__dropdown {
+      box-shadow: 1px 1px 3px #{{overlay0}};
+    }
+
+    .lh-tooltip {
+      background-color: #{{surface0}};
+      color: #{{text}};
+      &::before {
+        border-bottom-color: #{{surface0}};
+      }
+    }
+
+    .lh-report-icon::before {
+      filter: {{filter-report-icon}};
+    }
+
+    .lh-gauge--pwa__wrapper:not(.lh-badged--all) .lh-gauge--pwa__logo > path {
+      fill: #{{text}};
+    }
+
+    .lh-gauge--pwa__wrapper:not([class*='lh-badged--']) .lh-gauge--pwa__na-line {
+      fill: #{{text}} !important;
+    }
+
+    summary:focus {
+      box-shadow: 0 0 0 1px #{{accent}};
+    }
+  }
 }
 
 .event-listener-button {
@@ -77,6 +171,10 @@ accent: "{{mauve}}"
   background: #{{red}} !important;
 }
 
-#record-button {
-  color: #{{red}} !important;
+devtools-record-menu-title {
+  --override-color-accent-red: #{{red}} !important;
+}
+
+:host-context(.-theme-with-dark-background) .arrow {
+  filter: {{filter-arrow}};
 }

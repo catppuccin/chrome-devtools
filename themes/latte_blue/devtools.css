@@ -23,6 +23,8 @@
   --sys-color-primary-bright: #1e66f5 !important;
   --sys-color-on-primary: #eff1f5 !important;
 
+  --sys-color-tertiary: #40a02b !important;
+
   --sys-color-token-tag: #1e66f5 !important;
   --sys-color-token-attribute: #209fb5 !important;
   --sys-color-token-attribute-value: #fe640b !important;
@@ -33,6 +35,9 @@
   --sys-color-token-string-special: #40a02b !important;
   --sys-color-token-number: #fe640b !important;
   --sys-color-token-keyword: #8839ef !important;
+  --sys-color-token-meta: #8c8fa1 !important;
+  --sys-color-token-comment: #7c7f93 !important;
+  --sys-color-token-declaration: #4c4f69 !important;
 
   --sys-color-property-special: #04a5e5 !important;
 
@@ -64,6 +69,82 @@
   --issue-color-red: #d20f39 !important;
   --issue-color-yellow: #df8e1d !important;
   --issue-color-blue: #1e66f5 !important;
+
+  --drop-shadow: 0 0 0 0 #fff;
+  --drop-shadow-depth-1: 0 0 0 0 #fff;
+  --drop-shadow-depth-2: 0 0 0 0 #fff;
+  --drop-shadow-depth-3: 0 0 0 0 #fff;
+  --drop-shadow-depth-4: 0 0 0 0 #fff;
+  --drop-shadow-depth-5: 0 0 0 0 #fff;
+
+  --color-background-elevation-dark-only: #ccd0da;
+
+  .lh-root {
+    --report-background-color: #eff1f5;
+    --report-text-color: #4c4f69;
+    --report-text-color-secondary: #6c6f85;
+
+    --link-color: #1e66f5;
+    --snippet-color: #04a5e5;
+
+    --color-fail: #d20f39;
+    --color-fail-secondary: #d20f39;
+    --color-average: #df8e1d;
+    --color-average-secondary: #df8e1d;
+    --color-pass: #40a02b;
+    --color-pass-secondary: #40a02b;
+    --color-gray-700: #6c6f85;
+    --color-gray-600: #7c7f93;
+    --color-gray-500: #9ca0b0;
+    --color-gray-200: #ccd0da;
+    --color-blue-primary: #1e66f5;
+    --color-white: #eff1f5;
+
+    --topbar-background-color: #e6e9ef;
+
+    --toplevel-warning-background-color: #ead3b4;
+    --toplevel-warning-message-text-color: #4c4f69;
+    --toplevel-warning-text-color: #4c4f69;
+
+    --env-item-background-color: #ccd0da;
+
+    --table-group-header-background-color: #ccd0da;
+
+    --pwa-installable-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23ccd0da" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%234c4f69"/></g></svg>');
+    --pwa-optimized-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23ccd0da" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%234c4f69"/></g></svg>');
+
+    .lighthouse-help-text {
+      color: #d20f39 !important;
+    }
+
+    .lh-tools__dropdown {
+      box-shadow: 1px 1px 3px #9ca0b0;
+    }
+
+    .lh-tooltip {
+      background-color: #ccd0da;
+      color: #4c4f69;
+      &::before {
+        border-bottom-color: #ccd0da;
+      }
+    }
+
+    .lh-report-icon::before {
+      filter: invert(29%) sepia(6%) saturate(2713%) hue-rotate(196deg) brightness(87%) contrast(76%);
+    }
+
+    .lh-gauge--pwa__wrapper:not(.lh-badged--all) .lh-gauge--pwa__logo > path {
+      fill: #4c4f69;
+    }
+
+    .lh-gauge--pwa__wrapper:not([class*='lh-badged--']) .lh-gauge--pwa__na-line {
+      fill: #4c4f69 !important;
+    }
+
+    summary:focus {
+      box-shadow: 0 0 0 1px #1e66f5;
+    }
+  }
 }
 
 .event-listener-button {
@@ -74,6 +155,10 @@
   background: #d20f39 !important;
 }
 
-#record-button {
-  color: #d20f39 !important;
+devtools-record-menu-title {
+  --override-color-accent-red: #d20f39 !important;
+}
+
+:host-context(.-theme-with-dark-background) .arrow {
+  filter: invert(97%) sepia(2%) saturate(526%) hue-rotate(184deg) brightness(94%) contrast(99%);
 }
