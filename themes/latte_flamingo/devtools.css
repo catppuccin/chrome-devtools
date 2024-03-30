@@ -148,8 +148,8 @@
 }
 
 .metrics {
-  --override-box-model-text-color: #eff1f5 !important;
-  --override-box-model-separator-color: #eff1f5 !important;
+  --override-box-model-text-color: #dce0e8 !important;
+  --override-box-model-separator-color: #dce0e8 !important;
   [jslog*="MetricsBox"].highlighted {
     &.margin {
       background-color: #fe640b !important;

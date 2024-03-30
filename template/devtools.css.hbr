@@ -164,8 +164,8 @@ overrides:
 }
 
 .metrics {
-  --override-box-model-text-color: #{{base}} !important;
-  --override-box-model-separator-color: #{{base}} !important;
+  --override-box-model-text-color: #{{darklight base crust}} !important;
+  --override-box-model-separator-color: #{{darklight base crust}} !important;
   [jslog*="MetricsBox"].highlighted {
     &.margin {
       background-color: #{{peach}} !important;
