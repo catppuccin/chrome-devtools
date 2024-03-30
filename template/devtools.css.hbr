@@ -197,3 +197,29 @@ devtools-record-menu-title {
 :host-context(.-theme-with-dark-background) .arrow {
   filter: {{filter-arrow}};
 }
+
+input[type="checkbox"], input[type="radio"] {
+  appearance: none;
+  background-color: #{{surface0}};
+  border: solid 1px #{{overlay0}};
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+
+  &:checked {
+    background-color: #{{accent}};
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+.filtered-list-widget-item-wrapper .tag {
+  background-color: #{{accent}} !important;
+  color: #{{base}} !important;
+}

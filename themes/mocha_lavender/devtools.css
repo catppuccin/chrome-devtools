@@ -181,3 +181,29 @@ devtools-record-menu-title {
 :host-context(.-theme-with-dark-background) .arrow {
   filter: invert(7%) sepia(7%) saturate(3407%) hue-rotate(201deg) brightness(101%) contrast(94%);
 }
+
+input[type="checkbox"], input[type="radio"] {
+  appearance: none;
+  background-color: #313244;
+  border: solid 1px #6c7086;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+
+  &:checked {
+    background-color: #b4befe;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+.filtered-list-widget-item-wrapper .tag {
+  background-color: #b4befe !important;
+  color: #1e1e2e !important;
+}
