@@ -163,6 +163,25 @@ overrides:
   }
 }
 
+.metrics {
+  --override-box-model-text-color: #{{base}} !important;
+  --override-box-model-separator-color: #{{base}} !important;
+  [jslog*="MetricsBox"].highlighted {
+    &.margin {
+      background-color: #{{peach}} !important;
+    }
+    &.border {
+      background-color: #{{yellow}} !important;
+    }
+    &.padding {
+      background-color: #{{green}} !important;
+    }
+    &.content {
+      background-color: #{{blue}} !important;
+    }
+  }
+}
+
 .event-listener-button {
   background-color: #{{surface0}} !important;
 }

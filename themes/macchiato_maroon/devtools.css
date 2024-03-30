@@ -147,6 +147,25 @@
   }
 }
 
+.metrics {
+  --override-box-model-text-color: #24273a !important;
+  --override-box-model-separator-color: #24273a !important;
+  [jslog*="MetricsBox"].highlighted {
+    &.margin {
+      background-color: #f5a97f !important;
+    }
+    &.border {
+      background-color: #eed49f !important;
+    }
+    &.padding {
+      background-color: #a6da95 !important;
+    }
+    &.content {
+      background-color: #8aadf4 !important;
+    }
+  }
+}
+
 .event-listener-button {
   background-color: #363a4f !important;
 }
