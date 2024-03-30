@@ -7,6 +7,6 @@ for flavor in "latte" "frappe" "macchiato" "mocha"; do
     mkdir themes/${flavor}_${accent}
     whiskers template/manifest.json.hbr $flavor -o themes/${flavor}_${accent}/manifest.json --overrides "{\"accent\":\"$(tc $accent)\"}"
     whiskers template/devtools.css.hbr $flavor -o themes/${flavor}_${accent}/devtools.css --overrides "{\"accent\":\"{{$accent}}\"}"
-    cp template/devtools.html template/devtools.js themes/${flavor}_${accent}
+    cp -r template/images template/devtools.html template/devtools.js themes/${flavor}_${accent}
   done
 done
