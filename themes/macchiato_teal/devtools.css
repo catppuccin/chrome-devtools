@@ -1,4 +1,7 @@
 :root {
+  --text-disabled: #a5adcb !important;
+  --color-text-secondary: #a5adcb !important;
+
   --sys-color-base: #24273a !important;
   --sys-color-base-container: #1e2030 !important;
   --sys-color-neutral-container: #363a4f !important;

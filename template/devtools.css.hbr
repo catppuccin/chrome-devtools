@@ -15,6 +15,9 @@ overrides:
     filter-report-icon: "invert(78%) sepia(32%) saturate(181%) hue-rotate(190deg) brightness(105%) contrast(91%)"
 ---
 :root {
+  --text-disabled: #{{subtext0}} !important;
+  --color-text-secondary: #{{subtext0}} !important;
+
   --sys-color-base: #{{base}} !important;
   --sys-color-base-container: #{{mantle}} !important;
   --sys-color-neutral-container: #{{surface0}} !important;
