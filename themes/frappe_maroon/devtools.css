@@ -5,7 +5,7 @@
   --sys-color-base: #303446 !important;
   --sys-color-base-container: #292c3c !important;
   --sys-color-neutral-container: #414559 !important;
-  --sys-color-tonal-container: #695360 !important;
+  --sys-color-tonal-container: #695260 !important;
   --sys-color-surface: #414559 !important;
   --sys-color-surface1: #51576d !important;
   --sys-color-surface2: #51576d !important;
@@ -47,15 +47,15 @@
   --sys-color-state-disabled: #737994 !important;
   --sys-color-state-focus-ring: #ea999c !important;
   --sys-color-state-hover-on-subtle: #554957 !important;
-  --sys-color-state-ripple-neutral-on-subtle: #695360 !important;
+  --sys-color-state-ripple-neutral-on-subtle: #695260 !important;
   --sys-color-state-hover-on-prominent: #554957 !important;
-  --sys-color-state-ripple-neutral-on-prominent: #695360 !important;
+  --sys-color-state-ripple-neutral-on-prominent: #695260 !important;
 
   --sys-color-on-error-container: #c6d0f5 !important;
   --sys-color-error-bright: #e78284 !important;
 
-  --sys-color-surface-yellow: #555256 !important;
-  --sys-color-surface-yellow-high: #67615d !important;
+  --sys-color-surface-yellow: #545255 !important;
+  --sys-color-surface-yellow-high: #67605c !important;
   --sys-color-on-surface-yellow: #c6d0f5 !important;
 
   --sys-color-orange: #ef9f76 !important;
@@ -105,7 +105,7 @@
 
     --topbar-background-color: #292c3c;
 
-    --toplevel-warning-background-color: #67615d;
+    --toplevel-warning-background-color: #67605c;
     --toplevel-warning-message-text-color: #c6d0f5;
     --toplevel-warning-text-color: #c6d0f5;
 

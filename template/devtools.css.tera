@@ -1,0 +1,263 @@
+---
+whiskers:
+  version: "2.0.0"
+  matrix:
+    - flavor
+    - accent
+  filename: "themes/{{flavor.identifier}}_{{accent}}/devtools.css"
+overrides:
+  latte:
+    filterArrow: "invert(97%) sepia(2%) saturate(526%) hue-rotate(184deg) brightness(94%) contrast(99%)"
+    filterReportIcon: "invert(29%) sepia(6%) saturate(2713%) hue-rotate(196deg) brightness(87%) contrast(76%)"
+  frappe:
+    filterArrow: "invert(11%) sepia(5%) saturate(5076%) hue-rotate(194deg) brightness(93%) contrast(83%)"
+    filterReportIcon: "invert(84%) sepia(5%) saturate(1630%) hue-rotate(193deg) brightness(99%) contrast(94%)"
+  macchiato:
+    filterArrow: "invert(10%) sepia(46%) saturate(439%) hue-rotate(194deg) brightness(100%) contrast(94%)"
+    filterReportIcon: "invert(77%) sepia(4%) saturate(1976%) hue-rotate(193deg) brightness(111%) contrast(92%)"
+  mocha:
+    filterArrow: "invert(7%) sepia(7%) saturate(3407%) hue-rotate(201deg) brightness(101%) contrast(94%)"
+    filterReportIcon: "invert(78%) sepia(32%) saturate(181%) hue-rotate(190deg) brightness(105%) contrast(91%)"
+---
+{% set o = overrides | get(key=flavor.identifier) -%}
+{% set filterArrow = o | get(key="filterArrow") -%}
+{% set filterReportIcon = o | get(key="filterReportIcon") -%}
+{% set rosewater = flavor.colors.rosewater -%}
+{% set flamingo = flavor.colors.flamingo -%}
+{% set pink = flavor.colors.pink -%}
+{% set mauve = flavor.colors.mauve -%}
+{% set red = flavor.colors.red -%}
+{% set maroon = flavor.colors.maroon -%}
+{% set peach = flavor.colors.peach -%}
+{% set yellow = flavor.colors.yellow -%}
+{% set green = flavor.colors.green -%}
+{% set teal = flavor.colors.teal -%}
+{% set sky = flavor.colors.sky -%}
+{% set sapphire = flavor.colors.sapphire -%}
+{% set blue = flavor.colors.blue -%}
+{% set lavender = flavor.colors.lavender -%}
+{% set text = flavor.colors.text -%}
+{% set subtext1 = flavor.colors.subtext1 -%}
+{% set subtext0 = flavor.colors.subtext0 -%}
+{% set overlay2 = flavor.colors.overlay2 -%}
+{% set overlay1 = flavor.colors.overlay1 -%}
+{% set overlay0 = flavor.colors.overlay0 -%}
+{% set surface2 = flavor.colors.surface2 -%}
+{% set surface1 = flavor.colors.surface1 -%}
+{% set surface0 = flavor.colors.surface0 -%}
+{% set base = flavor.colors.base -%}
+{% set mantle = flavor.colors.mantle -%}
+{% set crust = flavor.colors.crust -%}
+{% set accent = flavor.colors[accent] -%}
+:root {
+  --text-disabled: #{{subtext0.hex}} !important;
+  --color-text-secondary: #{{subtext0.hex}} !important;
+
+  --sys-color-base: #{{base.hex}} !important;
+  --sys-color-base-container: #{{mantle.hex}} !important;
+  --sys-color-neutral-container: #{{surface0.hex}} !important;
+  --sys-color-tonal-container: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
+  --sys-color-surface: #{{surface0.hex}} !important;
+  --sys-color-surface1: #{{surface1.hex}} !important;
+  --sys-color-surface2: #{{surface1.hex}} !important;
+  --sys-color-surface-variant: #{{surface1.hex}} !important;
+  --sys-color-surface-error: #{{red | mix(color=base, amount=0.2) | get(key="hex")}} !important;
+
+  --sys-color-divider: #{{overlay0.hex}} !important;
+  --sys-color-neutral-outline: #{{overlay0.hex}} !important;
+  --sys-color-neutral-bright: #{{subtext0.hex}} !important;
+  --sys-color-tonal-outline: #{{accent.hex}} !important;
+
+  --sys-color-on-surface: #{{text.hex}} !important;
+  --sys-color-on-tonal-container: #{{text.hex}} !important;
+  --sys-color-on-surface-subtle: #{{subtext0.hex}} !important;
+  --sys-color-token-subtle: #{{subtext0.hex}} !important;
+
+  --sys-color-primary: #{{accent.hex}} !important;
+  --sys-color-primary-bright: #{{accent.hex}} !important;
+  --sys-color-on-primary: #{{base.hex}} !important;
+
+  --sys-color-tertiary: #{{green.hex}} !important;
+
+  --sys-color-token-tag: #{{blue.hex}} !important;
+  --sys-color-token-attribute: #{{sapphire.hex}} !important;
+  --sys-color-token-attribute-value: #{{peach.hex}} !important;
+  --sys-color-token-property-special: #{{sky.hex}} !important;
+  --sys-color-token-variable: #{{text.hex}} !important;
+  --sys-color-token-property: #{{lavender.hex}} !important;
+  --sys-color-token-string: #{{green.hex}} !important;
+  --sys-color-token-string-special: #{{green.hex}} !important;
+  --sys-color-token-number: #{{peach.hex}} !important;
+  --sys-color-token-keyword: #{{mauve.hex}} !important;
+  --sys-color-token-meta: #{{overlay1.hex}} !important;
+  --sys-color-token-comment: #{{overlay2.hex}} !important;
+  --sys-color-token-declaration: #{{text.hex}} !important;
+
+  --sys-color-property-special: #{{sky.hex}} !important;
+
+  --sys-color-state-disabled: #{{overlay0.hex}} !important;
+  --sys-color-state-focus-ring: #{{accent.hex}} !important;
+  --sys-color-state-hover-on-subtle: #{{accent | mix(color=base, amount=0.2) | get(key="hex")}} !important;
+  --sys-color-state-ripple-neutral-on-subtle: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
+  --sys-color-state-hover-on-prominent: #{{accent | mix(color=base, amount=0.2) | get(key="hex")}} !important;
+  --sys-color-state-ripple-neutral-on-prominent: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
+
+  --sys-color-on-error-container: #{{text.hex}} !important;
+  --sys-color-error-bright: #{{red.hex}} !important;
+
+  --sys-color-surface-yellow: #{{yellow | mix(color=base, amount=0.2) | get(key="hex")}} !important;
+  --sys-color-surface-yellow-high: #{{yellow | mix(color=base, amount=0.3) | get(key="hex")}} !important;
+  --sys-color-on-surface-yellow: #{{text.hex}} !important;
+
+  --sys-color-orange: #{{peach.hex}} !important;
+  --sys-color-orange-bright: #{{peach.hex}} !important;
+  --sys-color-green: #{{green.hex}} !important;
+  --sys-color-green-bright: #{{green.hex}} !important;
+  --sys-color-purple: #{{mauve.hex}} !important;
+  --sys-color-purple-bright: #{{mauve.hex}} !important;
+
+  --lighthouse-red: #{{red.hex}} !important;
+  --lighthouse-yellow: #{{yellow.hex}} !important;
+  --lighthouse-green: #{{green.hex}} !important;
+
+  --issue-color-red: #{{red.hex}} !important;
+  --issue-color-yellow: #{{yellow.hex}} !important;
+  --issue-color-blue: #{{blue.hex}} !important;
+
+  --drop-shadow: 0 0 0 0 #fff;
+  --drop-shadow-depth-1: 0 0 0 0 #fff;
+  --drop-shadow-depth-2: 0 0 0 0 #fff;
+  --drop-shadow-depth-3: 0 0 0 0 #fff;
+  --drop-shadow-depth-4: 0 0 0 0 #fff;
+  --drop-shadow-depth-5: 0 0 0 0 #fff;
+
+  --color-background-elevation-dark-only: #{{surface0.hex}};
+
+  .lh-root {
+    --report-background-color: #{{base.hex}};
+    --report-text-color: #{{text.hex}};
+    --report-text-color-secondary: #{{subtext0.hex}};
+
+    --link-color: #{{accent.hex}};
+    --snippet-color: #{{sky.hex}};
+
+    --color-fail: #{{red.hex}};
+    --color-fail-secondary: #{{red.hex}};
+    --color-average: #{{yellow.hex}};
+    --color-average-secondary: #{{yellow.hex}};
+    --color-pass: #{{green.hex}};
+    --color-pass-secondary: #{{green.hex}};
+    --color-gray-700: #{{subtext0.hex}};
+    --color-gray-600: #{{overlay2.hex}};
+    --color-gray-500: #{{overlay0.hex}};
+    --color-gray-200: #{{surface0.hex}};
+    --color-blue-primary: #{{accent.hex}};
+    --color-white: #{{base.hex}};
+
+    --topbar-background-color: #{{mantle.hex}};
+
+    --toplevel-warning-background-color: #{{yellow | mix(color=base, amount=0.3) | get(key="hex")}};
+    --toplevel-warning-message-text-color: #{{text.hex}};
+    --toplevel-warning-text-color: #{{text.hex}};
+
+    --env-item-background-color: #{{surface0.hex}};
+
+    --table-group-header-background-color: #{{surface0.hex}};
+
+    --pwa-installable-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23{{surface0.hex}}" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%23{{text.hex}}"/></g></svg>');
+    --pwa-optimized-gray-url: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="nonzero"><circle fill="%23{{surface0.hex}}" cx="12" cy="12" r="12"/><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm3.5 7.7h-2.8v2.8h-1.4v-2.8H8.5v-1.4h2.8V8.5h1.4v2.8h2.8v1.4z" fill="%23{{text.hex}}"/></g></svg>');
+
+    .lighthouse-help-text {
+      color: #{{red.hex}} !important;
+    }
+
+    .lh-tools__dropdown {
+      box-shadow: 1px 1px 3px #{{overlay0.hex}};
+    }
+
+    .lh-tooltip {
+      background-color: #{{surface0.hex}};
+      color: #{{text.hex}};
+      &::before {
+        border-bottom-color: #{{surface0.hex}};
+      }
+    }
+
+    .lh-report-icon::before {
+      filter: {{filterReportIcon}};
+    }
+
+    .lh-gauge--pwa__wrapper:not(.lh-badged--all) .lh-gauge--pwa__logo > path {
+      fill: #{{text.hex}};
+    }
+
+    .lh-gauge--pwa__wrapper:not([class*='lh-badged--']) .lh-gauge--pwa__na-line {
+      fill: #{{text.hex}} !important;
+    }
+
+    summary:focus {
+      box-shadow: 0 0 0 1px #{{accent.hex}};
+    }
+  }
+}
+
+.metrics {
+  --override-box-model-text-color: #{{if(cond=flavor.dark, t=base, f=crust) | get(key="hex")}} !important;
+  --override-box-model-separator-color: #{{if(cond=flavor.dark, t=base, f=crust) | get(key="hex")}} !important;
+  [jslog*="MetricsBox"].highlighted {
+    &.margin {
+      background-color: #{{peach.hex}} !important;
+    }
+    &.border {
+      background-color: #{{yellow.hex}} !important;
+    }
+    &.padding {
+      background-color: #{{green.hex}} !important;
+    }
+    &.content {
+      background-color: #{{blue.hex}} !important;
+    }
+  }
+}
+
+.event-listener-button {
+  background-color: #{{surface0.hex}} !important;
+}
+
+.lighthouse-progress-bar.errored {
+  background: #{{red.hex}} !important;
+}
+
+devtools-record-menu-title {
+  --override-color-accent-red: #{{red.hex}} !important;
+}
+
+:host-context(.-theme-with-dark-background) .arrow {
+  filter: {{filterArrow}};
+}
+
+input[type="checkbox"], input[type="radio"] {
+  appearance: none;
+  background-color: #{{surface0.hex}};
+  border: solid 1px #{{overlay0.hex}};
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+
+  &:checked {
+    background-color: #{{accent.hex}};
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+.filtered-list-widget-item-wrapper .tag {
+  background-color: #{{accent.hex}} !important;
+  color: #{{base.hex}} !important;
+}

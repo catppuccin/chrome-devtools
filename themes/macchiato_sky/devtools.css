@@ -46,16 +46,16 @@
 
   --sys-color-state-disabled: #6e738d !important;
   --sys-color-state-focus-ring: #91d7e3 !important;
-  --sys-color-state-hover-on-subtle: #3b4a5b !important;
+  --sys-color-state-hover-on-subtle: #3a4a5b !important;
   --sys-color-state-ripple-neutral-on-subtle: #455c6d !important;
-  --sys-color-state-hover-on-prominent: #3b4a5b !important;
+  --sys-color-state-hover-on-prominent: #3a4a5b !important;
   --sys-color-state-ripple-neutral-on-prominent: #455c6d !important;
 
   --sys-color-on-error-container: #cad3f5 !important;
   --sys-color-error-bright: #ed8796 !important;
 
-  --sys-color-surface-yellow: #4d4a4e !important;
-  --sys-color-surface-yellow-high: #615c59 !important;
+  --sys-color-surface-yellow: #4d494e !important;
+  --sys-color-surface-yellow-high: #615b58 !important;
   --sys-color-on-surface-yellow: #cad3f5 !important;
 
   --sys-color-orange: #f5a97f !important;
@@ -105,7 +105,7 @@
 
     --topbar-background-color: #1e2030;
 
-    --toplevel-warning-background-color: #615c59;
+    --toplevel-warning-background-color: #615b58;
     --toplevel-warning-message-text-color: #cad3f5;
     --toplevel-warning-text-color: #cad3f5;
 

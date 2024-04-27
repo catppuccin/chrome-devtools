@@ -10,7 +10,7 @@
   --sys-color-surface1: #bcc0cc !important;
   --sys-color-surface2: #bcc0cc !important;
   --sys-color-surface-variant: #bcc0cc !important;
-  --sys-color-surface-error: #e9c5d0 !important;
+  --sys-color-surface-error: #e9c4cf !important;
 
   --sys-color-divider: #9ca0b0 !important;
   --sys-color-neutral-outline: #9ca0b0 !important;
@@ -46,9 +46,9 @@
 
   --sys-color-state-disabled: #9ca0b0 !important;
   --sys-color-state-focus-ring: #ea76cb !important;
-  --sys-color-state-hover-on-subtle: #eedaed !important;
+  --sys-color-state-hover-on-subtle: #eed9ed !important;
   --sys-color-state-ripple-neutral-on-subtle: #eecce8 !important;
-  --sys-color-state-hover-on-prominent: #eedaed !important;
+  --sys-color-state-hover-on-prominent: #eed9ed !important;
   --sys-color-state-ripple-neutral-on-prominent: #eecce8 !important;
 
   --sys-color-on-error-container: #4c4f69 !important;

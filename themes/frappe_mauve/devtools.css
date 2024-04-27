@@ -54,8 +54,8 @@
   --sys-color-on-error-container: #c6d0f5 !important;
   --sys-color-error-bright: #e78284 !important;
 
-  --sys-color-surface-yellow: #555256 !important;
-  --sys-color-surface-yellow-high: #67615d !important;
+  --sys-color-surface-yellow: #545255 !important;
+  --sys-color-surface-yellow-high: #67605c !important;
   --sys-color-on-surface-yellow: #c6d0f5 !important;
 
   --sys-color-orange: #ef9f76 !important;
@@ -105,7 +105,7 @@
 
     --topbar-background-color: #292c3c;
 
-    --toplevel-warning-background-color: #67615d;
+    --toplevel-warning-background-color: #67605c;
     --toplevel-warning-message-text-color: #c6d0f5;
     --toplevel-warning-text-color: #c6d0f5;
 
