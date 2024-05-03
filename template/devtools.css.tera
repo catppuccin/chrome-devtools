@@ -61,7 +61,7 @@ overrides:
   --sys-color-surface1: #{{surface1.hex}} !important;
   --sys-color-surface2: #{{surface1.hex}} !important;
   --sys-color-surface-variant: #{{surface1.hex}} !important;
-  --sys-color-surface-error: #{{red | mix(color=base, amount=0.2) | get(key="hex")}} !important;
+  --sys-color-surface-error: #{{red | mix(color=base, amount=0.1) | get(key="hex")}} !important;
 
   --sys-color-divider: #{{overlay0.hex}} !important;
   --sys-color-neutral-outline: #{{overlay0.hex}} !important;
