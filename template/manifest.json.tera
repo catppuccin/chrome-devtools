@@ -1,15 +1,14 @@
 ---
 whiskers:
-  version: "2.0.2"
+  version: "2.1.0"
   matrix:
     - flavor
     - accent
   filename: "themes/{{flavor.identifier}}_{{accent}}/manifest.json"
-accent: "mauve"
 ---
 {
-  "name": "Catppuccin for DevTools {{flavor.name | capitalize}} {{accent | capitalize}}",
-  "description": "Soothing pastel theme for DevTools - {{flavor.name | capitalize}} {{accent | capitalize}}",
+  "name": "Catppuccin for Chrome DevTools {{flavor.name}} {{accent | capitalize}}",
+  "description": "Soothing pastel theme for Chrome DevTools - {{flavor.name}} {{accent | capitalize}}",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
