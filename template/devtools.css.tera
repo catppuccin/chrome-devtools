@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.0.0"
+  version: "2.1.0"
   matrix:
     - flavor
     - accent
@@ -99,10 +99,10 @@ overrides:
 
   --sys-color-state-disabled: #{{overlay0.hex}} !important;
   --sys-color-state-focus-ring: #{{accent.hex}} !important;
-  --sys-color-state-hover-on-subtle: #{{accent | mix(color=base, amount=0.2) | get(key="hex")}} !important;
-  --sys-color-state-ripple-neutral-on-subtle: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
-  --sys-color-state-hover-on-prominent: #{{accent | mix(color=base, amount=0.2) | get(key="hex")}} !important;
-  --sys-color-state-ripple-neutral-on-prominent: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
+  --sys-color-state-hover-on-subtle: #{{accent | mod(opacity=0.2) | get(key="hex")}} !important;
+  --sys-color-state-ripple-neutral-on-subtle: #{{accent | mod(opacity=0.3) | get(key="hex")}} !important;
+  --sys-color-state-hover-on-prominent: #{{accent | mod(opacity=0.2) | get(key="hex")}} !important;
+  --sys-color-state-ripple-neutral-on-prominent: #{{accent | mod(opacity=0.3) | get(key="hex")}} !important;
 
   --sys-color-on-error-container: #{{text.hex}} !important;
   --sys-color-error-bright: #{{red.hex}} !important;

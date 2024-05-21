@@ -1,6 +1,6 @@
 {
-  "name": "Catppuccin for DevTools Mocha Mauve",
-  "description": "Soothing pastel theme for DevTools - Mocha Mauve",
+  "name": "Catppuccin for Chrome DevTools Mocha Mauve",
+  "description": "Soothing pastel theme for Chrome DevTools - Mocha Mauve",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",

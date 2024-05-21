@@ -1,6 +1,6 @@
 {
-  "name": "Catppuccin for DevTools Frappé Flamingo",
-  "description": "Soothing pastel theme for DevTools - Frappé Flamingo",
+  "name": "Catppuccin for Chrome DevTools Frappé Flamingo",
+  "description": "Soothing pastel theme for Chrome DevTools - Frappé Flamingo",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",

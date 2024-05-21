@@ -48,10 +48,10 @@
 
   --sys-color-state-disabled: #6c7086 !important;
   --sys-color-state-focus-ring: #f38ba8 !important;
-  --sys-color-state-hover-on-subtle: #493447 !important;
-  --sys-color-state-ripple-neutral-on-subtle: #5e3f53 !important;
-  --sys-color-state-hover-on-prominent: #493447 !important;
-  --sys-color-state-ripple-neutral-on-prominent: #5e3f53 !important;
+  --sys-color-state-hover-on-subtle: #f38ba833 !important;
+  --sys-color-state-ripple-neutral-on-subtle: #f38ba84d !important;
+  --sys-color-state-hover-on-prominent: #f38ba833 !important;
+  --sys-color-state-ripple-neutral-on-prominent: #f38ba84d !important;
 
   --sys-color-on-error-container: #cdd6f4 !important;
   --sys-color-error-bright: #f38ba8 !important;

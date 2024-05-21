@@ -1,6 +1,6 @@
 {
-  "name": "Catppuccin for DevTools Macchiato Flamingo",
-  "description": "Soothing pastel theme for DevTools - Macchiato Flamingo",
+  "name": "Catppuccin for Chrome DevTools Macchiato Flamingo",
+  "description": "Soothing pastel theme for Chrome DevTools - Macchiato Flamingo",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
