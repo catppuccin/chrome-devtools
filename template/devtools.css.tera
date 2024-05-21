@@ -55,11 +55,13 @@ overrides:
 
   --sys-color-base: #{{base.hex}} !important;
   --sys-color-base-container: #{{mantle.hex}} !important;
+  --sys-color-cdt-base-container: #{{mantle.hex}} !important;
   --sys-color-neutral-container: #{{surface0.hex}} !important;
   --sys-color-tonal-container: #{{accent | mix(color=base, amount=0.3) | get(key="hex")}} !important;
   --sys-color-surface: #{{surface0.hex}} !important;
   --sys-color-surface1: #{{surface1.hex}} !important;
   --sys-color-surface2: #{{surface1.hex}} !important;
+  --sys-color-surface3: #{{surface2.hex}} !important;
   --sys-color-surface-variant: #{{surface1.hex}} !important;
   --sys-color-surface-error: #{{red | mix(color=base, amount=0.1) | get(key="hex")}} !important;
 

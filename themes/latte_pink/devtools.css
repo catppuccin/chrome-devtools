@@ -4,11 +4,13 @@
 
   --sys-color-base: #eff1f5 !important;
   --sys-color-base-container: #e6e9ef !important;
+  --sys-color-cdt-base-container: #e6e9ef !important;
   --sys-color-neutral-container: #ccd0da !important;
   --sys-color-tonal-container: #eecce8 !important;
   --sys-color-surface: #ccd0da !important;
   --sys-color-surface1: #bcc0cc !important;
   --sys-color-surface2: #bcc0cc !important;
+  --sys-color-surface3: #acb0be !important;
   --sys-color-surface-variant: #bcc0cc !important;
   --sys-color-surface-error: #ecdae2 !important;
 
