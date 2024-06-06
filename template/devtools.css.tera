@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.1.0"
+  version: "2.3.0"
   matrix:
     - flavor
     - accent
@@ -22,32 +22,6 @@ overrides:
 {% set o = overrides | get(key=flavor.identifier) -%}
 {% set filterArrow = o | get(key="filterArrow") -%}
 {% set filterReportIcon = o | get(key="filterReportIcon") -%}
-{% set rosewater = flavor.colors.rosewater -%}
-{% set flamingo = flavor.colors.flamingo -%}
-{% set pink = flavor.colors.pink -%}
-{% set mauve = flavor.colors.mauve -%}
-{% set red = flavor.colors.red -%}
-{% set maroon = flavor.colors.maroon -%}
-{% set peach = flavor.colors.peach -%}
-{% set yellow = flavor.colors.yellow -%}
-{% set green = flavor.colors.green -%}
-{% set teal = flavor.colors.teal -%}
-{% set sky = flavor.colors.sky -%}
-{% set sapphire = flavor.colors.sapphire -%}
-{% set blue = flavor.colors.blue -%}
-{% set lavender = flavor.colors.lavender -%}
-{% set text = flavor.colors.text -%}
-{% set subtext1 = flavor.colors.subtext1 -%}
-{% set subtext0 = flavor.colors.subtext0 -%}
-{% set overlay2 = flavor.colors.overlay2 -%}
-{% set overlay1 = flavor.colors.overlay1 -%}
-{% set overlay0 = flavor.colors.overlay0 -%}
-{% set surface2 = flavor.colors.surface2 -%}
-{% set surface1 = flavor.colors.surface1 -%}
-{% set surface0 = flavor.colors.surface0 -%}
-{% set base = flavor.colors.base -%}
-{% set mantle = flavor.colors.mantle -%}
-{% set crust = flavor.colors.crust -%}
 {% set accent = flavor.colors[accent] -%}
 :root {
   --text-disabled: #{{subtext0.hex}} !important;
