@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.3.0"
+  version: "2.4.0"
   matrix:
     - flavor
     - accent
@@ -100,14 +100,15 @@ overrides:
   --issue-color-yellow: #{{yellow.hex}} !important;
   --issue-color-blue: #{{blue.hex}} !important;
 
-  --drop-shadow: 0 0 0 0 #fff;
-  --drop-shadow-depth-1: 0 0 0 0 #fff;
-  --drop-shadow-depth-2: 0 0 0 0 #fff;
-  --drop-shadow-depth-3: 0 0 0 0 #fff;
-  --drop-shadow-depth-4: 0 0 0 0 #fff;
-  --drop-shadow-depth-5: 0 0 0 0 #fff;
+  --drop-shadow: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-1: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-2: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-3: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-4: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-5: 0 0 0 0 #fff !important;
 
-  --color-background-elevation-dark-only: #{{surface0.hex}};
+  --color-background-elevation-dark-only: #{{surface0.hex}} !important;
+  --app-color-navigation-drawer-background-selected: #{{accent.hex}} !important;
 
   .lh-root {
     --report-background-color: #{{base.hex}};

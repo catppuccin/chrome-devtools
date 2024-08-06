@@ -75,14 +75,15 @@
   --issue-color-yellow: #f9e2af !important;
   --issue-color-blue: #89b4fa !important;
 
-  --drop-shadow: 0 0 0 0 #fff;
-  --drop-shadow-depth-1: 0 0 0 0 #fff;
-  --drop-shadow-depth-2: 0 0 0 0 #fff;
-  --drop-shadow-depth-3: 0 0 0 0 #fff;
-  --drop-shadow-depth-4: 0 0 0 0 #fff;
-  --drop-shadow-depth-5: 0 0 0 0 #fff;
+  --drop-shadow: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-1: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-2: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-3: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-4: 0 0 0 0 #fff !important;
+  --drop-shadow-depth-5: 0 0 0 0 #fff !important;
 
-  --color-background-elevation-dark-only: #313244;
+  --color-background-elevation-dark-only: #313244 !important;
+  --app-color-navigation-drawer-background-selected: #f38ba8 !important;
 
   .lh-root {
     --report-background-color: #1e1e2e;
