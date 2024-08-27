@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Open `chrome://extensions` and `Load unpacked` the desired flavor/accent from the `themes` folder of this repository.
+1. Open `chrome://extensions` and `Load unpacked` the desired flavor/accent from the `themes` folder of this repository. Use [GitHub Directory Downloader](https://download-directory.github.io/) if you don't want to clone the entire repository.
 2. Open DevTools settings, click on the Experiments tab, and select the "Allow extensions to load custom stylesheets" checkbox.
 3. Restart Chrome.
 
